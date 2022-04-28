@@ -80,11 +80,6 @@
 * td: table data 里面的数据
 * th: table head 表头
   
-2.相关的样式
-* table-layout
-* border-collapse
-* border-spacing
-  
 示例
 
         <table>
@@ -117,6 +112,30 @@
             </tr>
         </tfoot>
     </table>
+
+2.相关的样式
+* table-layout：有默认值 `auto`自动表格布局算法，和 `fixed` 通过表格宽度来设置的。
+* border-collapse：`border-collapse` 默认值为 `separate`，即每个td单元格都有独⽴的边框；`collapse`表⽰相邻单元格共⽤⼀个边框，此时 `border-spacing` 将不起作⽤，设置为 `collapse`单元格间距将消失。
+* border-spacing：控制单元格之间的距离，一般改为0。
+  
+      <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+      table{
+          width: 600px;
+          table-layout: auto/fixed;根据内容预测宽度/尽量平均
+          border-spacing: 0px;表格之间的距离
+          border-collapse: collapse;表格之间合并
+      }
+      td,
+      th{
+          border: 1px solid blue;
+      }
+      </style>
+      </head>
 
 ## 我的感想
    上课看方方老师在视频里教的感觉很简单，自己实际操作下来才发现很容易出错，第三次的博客自此完成啦。
