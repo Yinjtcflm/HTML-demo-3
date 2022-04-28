@@ -137,6 +137,14 @@
       </style>
       </head>
 
+## 四.查看HTML的方法
+### 1.
+* yarn global add http-server
+* http-server -c-1
+### 2.
+* yarn global add parcel
+* parcel 文件名
+
 ## 我的感想
    上课看方方老师在视频里教的感觉很简单，自己实际操作下来才发现很容易出错，第三次的博客自此完成啦。
 
